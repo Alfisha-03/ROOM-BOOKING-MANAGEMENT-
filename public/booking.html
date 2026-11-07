@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room - Grand Palace Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>GRAND PALACE</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Book Now</a>
+        <a href="mybookings.html">My Bookings</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section class="register-section">
+    <div class="register-box">
+        <h2>Book Your Stay</h2>
+        <p>Enjoy luxury and comfort at Grand Palace Hotel.</p>
+
+        <form id="bookingForm">
+
+            <label>Select Room</label>
+            <select id="roomId" required>
+                <option value="">Choose a room</option>
+            </select>
+
+            <label>Check-in Date</label>
+            <input type="date" id="checkIn" required>
+
+            <label>Check-out Date</label>
+            <input type="date" id="checkOut" required>
+
+            <label>Total Amount</label>
+            <input type="text" id="totalAmount"
+                   placeholder="Amount will be calculated"
+                   readonly>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+
+        <p id="bookingMessage"></p>
+    </div>
+</section>
+
+<footer>
+    <p>GRAND PALACE HOTEL</p>
+    <p>Designed & Developed by Alfisha Maheen</p>
+    <p>© 2026 Grand Palace Hotel. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
